@@ -1,5 +1,5 @@
-<a href="index.php">Home</a><br><br>
-
+<a href="index.php">Home</a>
+<h2>Home work 1-2</h2>
 
 <?
 echo "Hello, World!";

@@ -1,10 +1,10 @@
 <?
 $path = "big/".$_FILES[photo][name];
 $pathSmall =  "small/".$_FILES[photo][name];
-if($_FILES[photo][size] < 240000 && move_uploaded_file($_FILES[photo][tmp_name],$path)){
+if($_FILES[photo][size] < 1000000 && move_uploaded_file($_FILES[photo][tmp_name],$path)){
   echo "Файл успешно загружен <br>";
   if(copy($path,$pathSmall)){
-    resize($pathSmall, 80);
+    resize($pathSmall, 200);
     echo "Файл успешно уменьшен <br>";
     echo '<a href=".">Назад</a>';    
   }
